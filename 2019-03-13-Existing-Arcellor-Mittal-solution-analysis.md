@@ -6,7 +6,7 @@ permalink: /existing-arcellor-mittal-solution-analysis/
 source-id: 1gx3xmErojy1nRPJ8MaGDARxJaZaNLVqgynLBsnr5m9g
 published: true
 ---
-Existing Arcellor Mittal solution analysis:
+**Existing Arcellor Mittal solution analysis**:
 
     1. Version of hybris running:
 
