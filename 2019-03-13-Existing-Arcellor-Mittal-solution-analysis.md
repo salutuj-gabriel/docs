@@ -118,7 +118,35 @@ version=6.4.0.0
 
         31. sscearlyloginaddon
 
-    12. Sdf
+    12. Some extensions contain apparel/electronics demo files like amdscommerceorgadon
 
-4. sd
+4. Build process
+
+    13. Clean - SUCCESSFUL
+
+   [echo] Removing link D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\smartedit/web/webroot/static-resources/dist/smartedit/css
+
+ 	[exec] Invalid switch - "web".
+
+ 	[exec] Result: 1
+
+ 	[echo] Removing link D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\smartedit/web/webroot/static-resources/dist/smartedit/js
+
+ 	[exec] Invalid switch - "web".
+
+ 	[exec] Result: 1
+
+ 	[echo] clean up of node modules symlink: D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\smartedit\node_modules
+
+ 	[echo] Removing link D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\personalizationsmartedit/web/webroot/css
+
+ 	[exec] Invalid switch - "web".
+
+ 	[exec] Result: 1
+
+ 	[echo] Removing link D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\personalizationsmartedit/web/webroot/personalizationsmartedit/js
+
+ 	[exec] Invalid switch - "web".
+
+ 	[exec] Result: 1
 
