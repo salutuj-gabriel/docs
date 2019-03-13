@@ -120,9 +120,11 @@ version=6.4.0.0
 
     12. Some extensions contain apparel/electronics demo files like amdscommerceorgadon
 
+    13. Facade custom extensions seems to be unused. Sae about few others.
+
 4. Build process
 
-    13. Clean - SUCCESSFUL
+    14. Clean - SUCCESSFUL
 
    [echo] Removing link D:\PROJ\MITTAL\ws_esteel\hybris\bin\ext-content\smartedit/web/webroot/static-resources/dist/smartedit/css
 
