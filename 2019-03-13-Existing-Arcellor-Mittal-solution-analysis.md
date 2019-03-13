@@ -8,7 +8,11 @@ published: true
 ---
 **Existing Arcellor Mittal solution analysis**:
 
-    1. Version of hybris running:
+1. Configuration
+
+    1. Mysql db
+
+    2. Version of hybris running:
 
 #Fri May 12 11:41:11 GMT 2017
 
@@ -16,9 +20,9 @@ builddate=20170512 1140
 
 version=6.4.0.0
 
-    2. Spring version (core) 4.3.3.
+    3. Spring version (core) 4.3.3.
 
-    3. Accelerator version
+    4. Accelerator version
 
 #Sat Apr 22 20:33:34 UTC 2017
 
@@ -26,43 +30,95 @@ builddate=20170422 2033
 
 version=6.3.0.0-SNAPSHOT
 
-    4. Dsf
+    5. B2B Accelerator version
 
-1. Custom extensions:
+#Thu May 04 16:28:16 UTC 2017
 
-    5. Sd
+builddate=20170504 1628
 
-    6. Sdf
+releasedate=20170427 0956
 
-    7. Sdf
+version=6.4.0.0
 
-    8. Sdf
+    6. Backoffice - 6.4
 
-    9. Sdf
+    7. cockpits - 6.3
 
-    10. Sf
+2. Customize 
 
-    11. Sdf
+    8. Two spring files overriden:
+
+        1. ext-integration\sap\masterdata\sapcustomerb2b\resources\sapcustomerb2b-spring.xml
+
+        2. ext-integration\sap\synchronousOM\sapordermgmtb2bfacades\resources\sapordermgmtb2bfacades-spring.xml
+
+    9. Impex for mediaconversion:
+
+        3. deleteConvertedMediasJob
+
+        4. mediaConversionJob
+
+        5. extractMediaMetaDataJob
+
+3. Custom extensions 26 in total (16+10) :
+
+    10. amds: accelerator with 4 addons
+
+        6. Amdscore
+
+        7. Amdsbackoffice
+
+        8. Amdscockpits
+
+        9. Amdscommercewebservices
+
+        10. Amdsinitialdata
+
+        11. Amdstest
+
+        12. Amdswsclient
+
+        13. Amdsfacades
+
+        14. Amdsfulfilmentprocess
+
+        15. Amdsstorefront
+
+        16. Amdsaccountsummariesaddon
+
+        17. Amdscheckoutaddon
+
+        18. Amdscommerceorgaddon
+
+        19. Amdscustomerticketingaddon
+
+        20. Mercanetcore
+
+        21. updatedata
+
+    11. ssc: b2b accelerator with 2 addons
+
+        22. Ssccore
+
+        23. Sscinitialdata
+
+        24. Ssccockpits
+
+        25. Ssctest
+
+        26. Sscfulfilmentprocess
+
+        27. Sscwsclient
+
+        28. Sscfacades
+
+        29. Sscstorefront
+
+        30. Sscb2baddon
+
+        31. sscearlyloginaddon
 
     12. Sdf
 
-    13. Sf
-
-    14. Sf
-
-    15. Sfsdf
-
-    16. Sdfsf
-
-    17. Sdf
-
-    18. Fsfs
-
-    19. Sdf
-
-    20. Sdf
-
-    21. sfd
-
-2. sd
+4. sd
 
