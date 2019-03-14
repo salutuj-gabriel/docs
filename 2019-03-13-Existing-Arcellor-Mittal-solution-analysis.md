@@ -260,5 +260,345 @@ INFO   | jvm 1	| main	| 2019/03/14 14:14:10.795 | ERROR [hybrisHTTP38] [DefaultS
 
     19. Update
 
+    20. AMDF Storefront:
+
+![image alt text]({{ site.url }}/public/zhVisFitu2T7aod2alknCw_img_0.png)
+
+ERROR [hybrisHTTP26] [SolrSearchRequestResponsePopulator] Exception while executing SOLR search
+
+de.hybris.platform.solrfacetsearch.search.FacetSearchException: No bean named 'ProductPointOfServiceValueProvider' is defined
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFacetSearchStrategy.search(DefaultFacetSearchStrategy.java:165) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFacetSearchService.search(DefaultFacetSearchService.java:89) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFacetSearchService.search(DefaultFacetSearchService.java:78) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.search.solrfacetsearch.populators.SolrSearchRequestResponsePopulator.populate(SolrSearchRequestResponsePopulator.java:71) [commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.search.solrfacetsearch.populators.SolrSearchRequestResponsePopulator.populate(SolrSearchRequestResponsePopulator.java:1) [commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.converters.impl.AbstractPopulatingConverter.populate(AbstractPopulatingConverter.java:73) [platformservicesserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.converter.impl.AbstractPopulatingConverter.convert(AbstractPopulatingConverter.java:37) [commerceservicesserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.core.services.impl.AMDSSolrProductSearchService.doSearch(AMDSSolrProductSearchService.java:49) [amdscoreserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.search.solrfacetsearch.impl.DefaultSolrProductSearchService.categorySearch(DefaultSolrProductSearchService.java:130) [commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.search.solrfacetsearch.impl.DefaultSolrProductSearchService.categorySearch(DefaultSolrProductSearchService.java:1) [commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.commercefacades.search.solrfacetsearch.impl.DefaultSolrProductSearchFacade$4.execute(DefaultSolrProductSearchFacade.java:182) [commercefacadesserver.jar:?]
+
+    	at de.hybris.platform.commercefacades.search.solrfacetsearch.impl.DefaultSolrProductSearchFacade$4.execute(DefaultSolrProductSearchFacade.java:1) [commercefacadesserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.threadcontext.impl.DefaultThreadContextService.executeInContext(DefaultThreadContextService.java:51) [commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.commercefacades.search.solrfacetsearch.impl.DefaultSolrProductSearchFacade.categorySearch(DefaultSolrProductSearchFacade.java:175) [commercefacadesserver.jar:?]
+
+    	at de.hybris.platform.acceleratorstorefrontcommons.controllers.pages.AbstractCategoryPageController$CategorySearchEvaluator.doSearch(AbstractCategoryPageController.java:284) [classes/:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.controllers.pages.CategoryPageController.performSearchAndGetResultsPage(CategoryPageController.java:117) [classes/:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.controllers.pages.CategoryPageController.category(CategoryPageController.java:71) [classes/:?]
+
+    	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_152]
+
+    	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_152]
+
+    	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_152]
+
+    	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_152]
+
+    	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:624) [servlet-api.jar:?]
+
+    	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:?]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:301) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$StatisticsGatewayFilter.doFilter(AbstractPlatformFilterChain.java:390) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.WebAppMediaFilter.doFilter(WebAppMediaFilter.java:140) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.CustomerLocationRestorationFilter.doFilterInternal(CustomerLocationRestorationFilter.java:52) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.CartRestorationFilter.doFilterInternal(CartRestorationFilter.java:88) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.AMDSValidationCGAndPPDFliter.doFilterInternal(AMDSValidationCGAndPPDFliter.java:126) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.AnonymousCheckoutFilter.doFilterInternal(AnonymousCheckoutFilter.java:36) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:150) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:121) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.personalizationservices.filter.CxPersonalizationFilter.doFilterInternal(CxPersonalizationFilter.java:66) [personalizationservicesserver.jar:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.FileUploadFilter.doFilterInternal(FileUploadFilter.java:51) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.UrlEncoderFilter.doFilterInternal(UrlEncoderFilter.java:74) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.StorefrontFilter.doFilterInternal(StorefrontFilter.java:89) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.cms.CMSSiteFilter.doFilterInternal(CMSSiteFilter.java:100) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.RequestLoggerFilter.doFilterInternal(RequestLoggerFilter.java:71) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.AcceleratorAddOnFilter.doFilter(AcceleratorAddOnFilter.java:90) [classes/:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.SessionFilter.doFilter(SessionFilter.java:99) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.Log4JFilter.doFilter(Log4JFilter.java:44) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain.processStandardFilterChain(AbstractPlatformFilterChain.java:201) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain.doFilterInternal(AbstractPlatformFilterChain.java:179) [coreserver.jar:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.UrlPathFilter.doFilterInternal(UrlPathFilter.java:82) [classes/:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at com.arcelormittal.amds.ecom.storefront.filters.AcceleratorAddOnFilter.doFilter(AcceleratorAddOnFilter.java:90) [classes/:?]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at de.hybris.platform.servicelayer.web.XSSFilter.processPatternsAndDoFilter(XSSFilter.java:358) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.XSSFilter.doFilter(XSSFilter.java:306) [coreserver.jar:?]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:452) [catalina.jar:7.0.75]
+
+    	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087) [tomcat-coyote.jar:7.0.75]
+
+    	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637) [tomcat-coyote.jar:7.0.75]
+
+    	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318) [tomcat-coyote.jar:7.0.75]
+
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+
+    	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.75]
+
+    	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
+
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'ProductPointOfServiceValueProvider' is defined
+
+    	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:677) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1180) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:284) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:275) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197) ~[spring-beans-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1076) ~[spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.solrfacetsearch.provider.impl.DefaultValueProviderSelectionStrategy.getValueProvider(DefaultValueProviderSelectionStrategy.java:61) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFieldNameTranslator.translateFromProperty(DefaultFieldNameTranslator.java:197) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFieldNameTranslator.getFieldInfos(DefaultFieldNameTranslator.java:147) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.populators.FacetSearchResultFacetsPopulator.buildFacets(FacetSearchResultFacetsPopulator.java:186) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.populators.FacetSearchResultFacetsPopulator.populate(FacetSearchResultFacetsPopulator.java:111) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.populators.FacetSearchResultFacetsPopulator.populate(FacetSearchResultFacetsPopulator.java:1) ~[solrfacetsearchserver.jar:?]
+
+    	at de.hybris.platform.converters.impl.AbstractPopulatingConverter.populate(AbstractPopulatingConverter.java:73) ~[platformservicesserver.jar:?]
+
+    	at de.hybris.platform.commerceservices.converter.impl.AbstractPopulatingConverter.convert(AbstractPopulatingConverter.java:37) ~[commerceservicesserver.jar:?]
+
+    	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFacetSearchStrategy.search(DefaultFacetSearchStrategy.java:155) ~[solrfacetsearchserver.jar:?]
+
   
 
