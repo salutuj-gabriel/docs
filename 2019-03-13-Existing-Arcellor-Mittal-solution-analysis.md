@@ -176,7 +176,11 @@ Duplicated project name in import. Project bindImpexTemplates defined first in D
 
     17. Hybris start
 
+Wstaje bezproblemowo
+
     18. Init
+
+Mają trochę bezsensu patch system - możliwe, że chcąc startować z tego pułapu, który dostaliśmy trzeba bedzie przeanalizować i skonsolidować wszystkie fixy które mają w swoich patchach do wersji 1.0.0 po naszej stronie a jest tego trochę. 
 
     19. Update
 
