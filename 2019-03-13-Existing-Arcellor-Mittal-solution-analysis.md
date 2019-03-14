@@ -258,7 +258,461 @@ INFO   | jvm 1	| main	| 2019/03/14 14:14:10.795 | ERROR [hybrisHTTP38] [DefaultI
 
 INFO   | jvm 1	| main	| 2019/03/14 14:14:10.795 | ERROR [hybrisHTTP38] [DefaultSetupImpexService] Importing [/amdsinitialdata/import/sampledata/contentCatalogs/AMDS-FR_ContentCatalog/cmsContent/menu_fr.impex]... FAILED
 
-    19. Update
+    19. Init ssc
+
+INFO  [ImpExWorker<9/16>] [ImpExWorker] Returning worker impex worker 9/16 [cj:0000006K] to the pool
+
+INFO  [ImpExWorker<2/16>] [ImpExWorker] Returning worker impex worker 2/16 [cj:0000006K] to the pool
+
+INFO  [impex result worker [cj:0000006K]] [ImpExWorker] Returning worker impex result worker [cj:0000006K] to the pool
+
+INFO  [ImpExWorker<15/16>] [ImpExWorker] Returning worker impex worker 15/16 [cj:0000006K] to the pool
+
+INFO  [ImpExWorker<12/16>] [ImpExWorker] Returning worker impex worker 12/16 [cj:0000006K] to the pool
+
+INFO  [hybrisHTTP18] (ssc) (0000006K) [Importer] Finished 2 pass in 0d 00h:00m:00s:004ms - processed: 4, dumped: 4 (last pass: 4)
+
+ERROR [hybrisHTTP18] (ssc) (0000006K) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 4 lines![HY-123]
+
+INFO  [impex reader worker [cj:0000006K]] [ImpExWorker] Returning worker impex reader worker [cj:0000006K] to the pool
+
+ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000006K for further details
+
+E
+
+WARN  [impex result worker [cj:0000006Q]] (ssc) [ImpExImportReader] line 3 at main script: dumped unresolved line ValueLine[unresolvable:error finding existing item : column='target' value='FE1', | column 2: could not resolve item for FE1,line 3 at main script,null,HeaderDescriptor[line 2 at main script, insert_update, BaseStore2WarehouseRel, {}, [source, target] ],{1=ValueEntry('ssc'=8796093056989,unresolved=false,ignore=false), 2=ValueEntry('FE1'=null,unresolved=true,reason:could not resolve item for FE1,ignore=false)}]
+
+INFO  [ImpExWorker<8/16>] [ImpExWorker] Returning worker impex worker 8/16 [cj:0000006Q] to the pool
+
+INFO  [ImpExWorker<7/16>] [ImpExWorker] Returning worker impex worker 7/16 [cj:0000006Q] to the pool
+
+INFO  [impex result worker [cj:0000006Q]] [ImpExWorker] Returning worker impex result worker [cj:0000006Q] to the pool
+
+INFO  [hybrisHTTP18] (ssc) (0000006Q) [Importer] Finished 2 pass in 0d 00h:00m:00s:004ms - processed: 1, dumped: 1 (last pass: 1)
+
+INFO  [ImpExWorker<15/16>] [ImpExWorker] Returning worker impex worker 15/16 [cj:0000006Q] to the pool
+
+ERROR [hybrisHTTP18] (ssc) (0000006Q) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 1 lines![HY-123]
+
+INFO  [impex reader worker [cj:0000006Q]] [ImpExWorker] Returning worker impex reader worker [cj:0000006Q] to the pool
+
+ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000006Q for further details
+
+ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/stores/ssc/warehouses.impex]... FAILED
+
+INFO  [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/reviews.impex]...
+
+INFO  [hybrisHTTP18] (ssc) [Initialization] Creating project data for ssctest ...
+
+WARN  [hybrisHTTP18] (ssc) [AbstractSystemSetup] Missing setup parameter for key [createTestData], falling back to defined default [true]
+
+INFO  [hybrisHTTP18] (ssc) [TestDataSystemSetup] Creating Test Users...
+
+INFO  [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssctest/import/qa-test-users.impex]...
+
+INFO  [hybrisHTTP18] (ssc) [DefaultImportService] Starting import synchronous using cronjob with code=0000007F
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [ImpExImportJob] Starting multi-threaded ImpEx cronjob "ImpEx-Import" (16 threads)
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [MultiThreadedImpExImportReader] Trying to allocate required threads.
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [MultiThreadedImpExImportReader] Required threads have been allocated.
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [MultiThreadedImpExImportReader] added worker impex worker 0/16 [cj:0000007F]
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [MultiThreadedImpExImportReader] Started ImpEx reader worker impex reader worker [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 1/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 2/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 3/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 4/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 5/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 6/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 7/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 8/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 9/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 10/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 11/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 12/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 13/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 14/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] added worker impex worker 15/16 [cj:0000007F]
+
+INFO  [impex reader worker [cj:0000007F]] (ssc) [MultiThreadedImpExImportReader] Allocated 15 new ones of 16 ImpEx workers.
+
+WARN  [ImpExWorker<6/16>] (ssc) [ReflectionAttributeAccess] line 66 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<15/16>] (ssc) [ReflectionAttributeAccess] line 67 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<2/16>] (ssc) [ReflectionAttributeAccess] line 65 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<1/16>] (ssc) [ReflectionAttributeAccess] line 70 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<11/16>] (ssc) [ReflectionAttributeAccess] line 64 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<7/16>] (ssc) [ReflectionAttributeAccess] line 69 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<8/16>] (ssc) [ReflectionAttributeAccess] line 68 at main script: extension amdscore not installed, cannot call attribute accessor for Address.requiresPostalCodeValidation:java.lang.Boolean[rwoSRp]
+
+WARN  [ImpExWorker<4/16>] (ssc) [ReflectionAttributeAccess] line 105 at main script: extension amdscore not installed, cannot call attribute accessor for Order.sapPlacedOrderError:java.lang.Boolean[rwSRp]
+
+WARN  [impex reader worker [cj:0000007F]] (ssc) [ReflectionAttributeAccess] line 106 at main script: extension amdscore not installed, cannot call attribute accessor for Address.heading:java.lang.String[rwoSRp]
+
+WARN  [impex reader worker [cj:0000007F]] (ssc) [ReflectionAttributeAccess] line 106 at main script: extension sapmodel not installed, cannot call attribute accessor for Address.sapAddressUsage:java.lang.String[rwoSCRp]
+
+WARN  [impex reader worker [cj:0000007F]] (ssc) [ReflectionAttributeAccess] line 106 at main script: extension sapmodel not installed, cannot call attribute accessor for Address.sapAddressUsageCounter:java.lang.String[rwoSCRp]
+
+WARN  [impex reader worker [cj:0000007F]] (ssc) [ReflectionAttributeAccess] line 106 at main script: extension sapmodel not installed, cannot call attribute accessor for Address.sapCustomerID:java.lang.String[rwoSCRp]
+
+INFO  [impex result worker [cj:0000007F]] [ImpExWorker] Returning worker impex result worker [cj:0000007F] to the pool
+
+INFO  [hybrisHTTP18] (ssc) (0000007F) [Importer] Finished 2 pass in 0d 00h:00m:00s:013ms - processed: 49, dumped: 49 (last pass: 49)
+
+ERROR [hybrisHTTP18] (ssc) (0000007F) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 49 lines![HY-123]
+
+INFO  [impex reader worker [cj:0000007F]] [ImpExWorker] Returning worker impex reader worker [cj:0000007F] to the pool
+
+ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000007F for further details
+
+ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssctest/import/qa-test-users.impex]... FAILED
+
+INFO  [hybrisHTTP18] (ssc) [Initialization] Creating project data for amdscommercewebservices ...
+
+INFO  [hybrisHTTP18] (ssc) [ImpExSystemSetup] importing resource : /impex/projectdata-amdscommercewebservices.impex
+
+WARN  [impex result worker [cj:0000007U-ImpEx-Import]] (ssc) [ImpExImportReader] line 18 at main script: dumped unresolved line ValueLine[unresolvable:error finding existing item : column='cronJob' value='oldCartRemovalCronJob', | column 1: cannot resolve value 'oldCartRemovalCronJob' for attribute 'cronJob',line 18 at main script,null,HeaderDescriptor[line 17 at main script, insert_update, Trigger, {}, [cronJob, second, minute, hour, day, month, year, relative, active, maxAcceptableDelay] ],{1=ValueEntry('oldCartRemovalCronJob'=null,unresolved=true,reason:cannot resolve value 'oldCartRemovalCronJob' for attribute 'cronJob',ignore=false), 2=ValueEntry('0'=null,unresolved=null,ignore=false), 3=ValueEntry('30'=null,unresolved=null,ignore=false), 4=ValueEntry('3'=null,unresolved=null,ignore=false), 5=ValueEntry('-1'=null,unresolved=null,ignore=false), 6=ValueEntry('-1'=null,unresolved=null,ignore=false), 7=ValueEntry('-1'=null,unresolved=null,ignore=false), 8=ValueEntry('false'=null,unresolved=null,ignore=false), 9=ValueEntry('true'=null,unresolved=null,ignore=false), 10=ValueEntry('-1'=null,unresolved=null,ignore=false)}]
+
+INFO  [ImpExWorker<1/16>] [ImpExWorker] Returning worker impex worker 1/16 [cj:0000007U-ImpEx-Import] to the pool
+
+INFO  [impex result worker [cj:0000007U-ImpEx-Import]] [ImpExWorker] Returning worker impex result worker [cj:0000007U-ImpEx-Import] to the pool
+
+INFO  [hybrisHTTP18] (ssc) (0000007U-ImpEx-Import) [Importer] Finished 2 pass in 0d 00h:00m:00s:013ms - processed: 6, dumped: 6 (last pass: 6)
+
+INFO  [impex reader worker [cj:0000007U-ImpEx-Import]] [ImpExWorker] Returning worker impex reader worker [cj:0000007U-ImpEx-Import] to the pool
+
+WARN  [hybrisHTTP18] (ssc) (0000007U-ImpEx-Import) [Importer] Import aborted after 0d 00h:00m:00s:100ms
+
+ERROR [hybrisHTTP18] (ssc) (0000007U-ImpEx-Import) [ImpExImportJob] Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 6 lines!
+
+ERROR [hybrisHTTP18] (ssc) [ImpExManager] Import has caused an error, see logs of cronjob with code=0000007U-ImpEx-Import for further details
+
+INFO  [hybrisHTTP18] (ssc) [Initialization] Creating project data for previewpersonalizationweb …
+
+ERROR [hybrisHTTP18] (ssc) [CockpitModuleComponentDefinitionService] Could not delete deployed resources, reason:
+
+java.io.IOException: Unable to delete file: D:\PROJ\MITTAL\ws_esteel\hybris\data\backoffice\widgetlib\deployed\voucherbackoffice.jar
+
+    	at org.apache.commons.io.FileUtils.forceDelete(FileUtils.java:2279) ~[commons-io-2.4.jar:2.4]
+
+    	at org.apache.commons.io.FileUtils.cleanDirectory(FileUtils.java:1653) ~[commons-io-2.4.jar:2.4]
+
+    	at com.hybris.cockpitng.modules.core.impl.CockpitModuleComponentDefinitionService.fetchExternalWidgets(CockpitModuleComponentDefinitionService.java:98) ~[?:?]
+
+    	at com.hybris.cockpitng.modules.core.impl.CockpitModuleComponentDefinitionService.reloadDefinitions(CockpitModuleComponentDefinitionService.java:75) ~[?:?]
+
+    	at com.hybris.cockpitng.util.impl.DefaultWidgetUtils.refreshWidgetLibrary(DefaultWidgetUtils.java:70) ~[?:?]
+
+    	at com.hybris.backoffice.config.DefaultBackofficeStartupHandler.resetBackofficeWidgetsConfiguration(DefaultBackofficeStartupHandler.java:72) ~[?:?]
+
+    	at com.hybris.backoffice.config.DefaultBackofficeStartupHandler.lambda$0(DefaultBackofficeStartupHandler.java:57) ~[?:?]
+
+    	at com.hybris.backoffice.events.AbstractBackofficeEventListener.onEvent(AbstractBackofficeEventListener.java:56) [backofficeserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.event.impl.AbstractEventListener.onApplicationEvent(AbstractEventListener.java:65) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.event.impl.AbstractEventListener.onApplicationEvent(AbstractEventListener.java:1) [coreserver.jar:?]
+
+    	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:382) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:336) [spring-context-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at de.hybris.platform.spring.ctx.CloseAwareApplicationContext.publishEvent(CloseAwareApplicationContext.java:107) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.event.impl.SpringEventSender.sendEvent(SpringEventSender.java:33) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.event.impl.PlatformClusterEventSender.sendEvent(PlatformClusterEventSender.java:60) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.event.impl.DefaultEventService.publishEvent(DefaultEventService.java:75) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.internal.jalo.ServicelayerManager.notifyInitializationEnd(ServicelayerManager.java:286) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.Initialization.doInitializeImpl(Initialization.java:609) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.Initialization.access$5(Initialization.java:465) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.Initialization$5.call(Initialization.java:786) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.Initialization$5.call(Initialization.java:1) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.system.InitializationLockHandler.performLocked(InitializationLockHandler.java:80) [coreserver.jar:?]
+
+    	at de.hybris.platform.core.Initialization.doInitialize(Initialization.java:818) [coreserver.jar:?]
+
+    	at de.hybris.platform.hac.facade.impl.DefaultInitUpdateFacade.executeInitUpdate(DefaultInitUpdateFacade.java:69) [classes/:?]
+
+    	at de.hybris.platform.hac.controller.platform.InitUpdateController.initExecuteWrap(InitUpdateController.java:106) [classes/:?]
+
+    	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:1.8.0_152]
+
+    	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[?:1.8.0_152]
+
+    	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:1.8.0_152]
+
+    	at java.lang.reflect.Method.invoke(Method.java:498) ~[?:1.8.0_152]
+
+    	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:221) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:136) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:114) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:963) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:897) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:650) [servlet-api.jar:?]
+
+    	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846) [spring-webmvc-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at javax.servlet.http.HttpServlet.service(HttpServlet.java:731) [servlet-api.jar:?]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:303) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52) [tomcat7-websocket.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.sitemesh.webapp.contentfilter.ContentBufferingFilter.bufferAndPostProcess(ContentBufferingFilter.java:169) [sitemesh-3.0-alpha-2.jar:?]
+
+    	at org.sitemesh.webapp.contentfilter.ContentBufferingFilter.doFilter(ContentBufferingFilter.java:126) [sitemesh-3.0-alpha-2.jar:?]
+
+    	at org.sitemesh.config.ConfigurableSiteMeshFilter.doFilter(ConfigurableSiteMeshFilter.java:163) [sitemesh-3.0-alpha-2.jar:?]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.springframework.web.multipart.support.MultipartFilter.doFilterInternal(MultipartFilter.java:122) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:317) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.invoke(FilterSecurityInterceptor.java:127) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.intercept.FilterSecurityInterceptor.doFilter(FilterSecurityInterceptor.java:91) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:115) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:137) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:111) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.rememberme.RememberMeAuthenticationFilter.doFilter(RememberMeAuthenticationFilter.java:150) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:169) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.www.BasicAuthenticationFilter.doFilterInternal(BasicAuthenticationFilter.java:158) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:200) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:121) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.csrf.CsrfFilter.doFilterInternal(CsrfFilter.java:100) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:66) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.access.channel.ChannelProcessingFilter.doFilter(ChannelProcessingFilter.java:157) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177) [spring-security-web-4.1.3.RELEASE.jar:4.1.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:77) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:301) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$StatisticsGatewayFilter.doFilter(AbstractPlatformFilterChain.java:390) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.SecureMediaFilter.doFilter(SecureMediaFilter.java:108) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.DataSourceSwitchingFilter.doFilter(DataSourceSwitchingFilter.java:70) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.SessionFilter.doFilter(SessionFilter.java:99) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.RedirectWhenSystemIsNotInitializedFilter.processWhenNotInitialized(RedirectWhenSystemIsNotInitializedFilter.java:129) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.RedirectWhenSystemIsNotInitializedFilter.doFilter(RedirectWhenSystemIsNotInitializedFilter.java:106) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.Log4JFilter.doFilter(Log4JFilter.java:44) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.session.HybrisSpringSessionFilter.doFilter(HybrisSpringSessionFilter.java:69) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain$InternalFilterChain.doFilter(AbstractPlatformFilterChain.java:271) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain.processStandardFilterChain(AbstractPlatformFilterChain.java:201) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.AbstractPlatformFilterChain.doFilterInternal(AbstractPlatformFilterChain.java:179) [coreserver.jar:?]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:346) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:262) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) [spring-web-4.3.3.RELEASE.jar:4.3.3.RELEASE]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at de.hybris.platform.servicelayer.web.XSSFilter.processPatternsAndDoFilter(XSSFilter.java:358) [coreserver.jar:?]
+
+    	at de.hybris.platform.servicelayer.web.XSSFilter.doFilter(XSSFilter.java:306) [coreserver.jar:?]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:241) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:208) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:218) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:110) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:103) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:116) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.valves.AccessLogValve.invoke(AccessLogValve.java:962) [catalina.jar:7.0.75]
+
+    	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:452) [catalina.jar:7.0.75]
+
+    	at org.apache.coyote.http11.AbstractHttp11Processor.process(AbstractHttp11Processor.java:1087) [tomcat-coyote.jar:7.0.75]
+
+    	at org.apache.coyote.AbstractProtocol$AbstractConnectionHandler.process(AbstractProtocol.java:637) [tomcat-coyote.jar:7.0.75]
+
+    	at org.apache.tomcat.util.net.JIoEndpoint$SocketProcessor.run(JIoEndpoint.java:318) [tomcat-coyote.jar:7.0.75]
+
+    	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_152]
+
+    	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_152]
+
+    	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-coyote.jar:7.0.75]
+
+    	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_152]
 
     20. AMDF Storefront:
 
