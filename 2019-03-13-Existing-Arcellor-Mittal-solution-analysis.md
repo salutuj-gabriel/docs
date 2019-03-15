@@ -260,6 +260,200 @@ INFO   | jvm 1	| main	| 2019/03/14 14:14:10.795 | ERROR [hybrisHTTP38] [DefaultS
 
     19. Init ssc
 
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.168 | WARN  [impex result worker [cj:0000001W]] (ssc) [ImpExImportReader] line 4 at main script: dumped unresolved line ValueLine[unresolvable:Exception : line 34: cannot update 8796093186080 with values ItemAttributeMap[ registry:  null, type: <null>, data: {active=tru
+
+e, fallbacklanguages=[8796093186080->fr]} ] due to fallback languages cycle detected for 8796093186080->fr and [8796093186080->fr], Exception : line 4: cannot update 8796093186080 with values ItemAttributeMap[ registry:  null, type: <null>, data: {active=true, fallbacklanguages=[8796093186080->fr]} ] due to fallback la
+
+nguages cycle detected for 8796093186080->fr and [8796093186080->fr],line 4 at main script,null,HeaderDescriptor[line 2 at main script, insert_update, Language, {}, [isocode, fallbackLanguages, active] ],{1=ValueEntry('fr'=fr,unresolved=false,ignore=false), 2=ValueEntry('fr'=[8796093186080->fr],unresolved=false,ignore=
+
+false), 3=ValueEntry(''=true,unresolved=false,ignore=false), 4=ValueEntry(''=null,unresolved=null,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.168 | INFO  [ImpExWorker<10/16>] [ImpExWorker] Returning worker impex worker 10/16 [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.168 | INFO  [impex result worker [cj:0000001W]] [ImpExWorker] Returning worker impex result worker [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.168 | INFO  [ImpExWorker<7/16>] [ImpExWorker] Returning worker impex worker 7/16 [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.168 | INFO  [ImpExWorker<0/16>] [ImpExWorker] Returning worker impex worker 0/16 [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | INFO  [ImpExWorker<14/16>] [ImpExWorker] Returning worker impex worker 14/16 [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | INFO  [hybrisHTTP18] (ssc) (0000001W) [Importer] Finished 2 pass in 0d 00h:00m:00s:005ms - processed: 2, dumped: 2 (last pass: 2)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | ERROR [hybrisHTTP18] (ssc) (0000001W) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 2 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | INFO  [impex reader worker [cj:0000001W]] [ImpExWorker] Returning worker impex reader worker [cj:0000001W] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000001W for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.169 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssccore/import/common/essential-data.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.483 | WARN  [impex result worker [cj:0000001X]] (ssc) [ImpExImportReader] line 4 at main script: dumped unresolved line ValueLine[unresolvable:no existing item found for update,line 4 at main script,null,HeaderDescriptor[line 2 at main script, update, Currency, {}, [iso
+
+code, name] ],{1=ValueEntry('JPY'=JPY,unresolved=false,ignore=false), 2=ValueEntry('Japanese Yen'=null,unresolved=null,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.483 | INFO  [impex result worker [cj:0000001X]] [ImpExWorker] Returning worker impex result worker [cj:0000001X] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.483 | INFO  [hybrisHTTP18] (ssc) (0000001X) [Importer] Finished 2 pass in 0d 00h:00m:00s:006ms - processed: 2, dumped: 2 (last pass: 2)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.483 | ERROR [hybrisHTTP18] (ssc) (0000001X) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 2 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.484 | INFO  [impex reader worker [cj:0000001X]] [ImpExWorker] Returning worker impex reader worker [cj:0000001X] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.585 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000001X for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.585 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssccore/import/common/essential-data_en.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.586 | INFO  [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssccore/import/common/essential-data_de.impex]...
+
+..
+
+INFO   | jvm 1	| main	| 2019/03/14 16:56:37.899 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssccore/import/common/essential-data_de.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.612 | WARN  [impex result worker [cj:00000029]] (ssc) [ImpExImportReader] line 17 at main script: dumped unresolved line ValueLine[,line 17 at main script,ConversionGroup,HeaderDescriptor[line 15 at main script, insert_update, ConversionGroup, {}, [code, name, supported
+
+Formats] ],{1=ValueEntry('<ignore>SSCBannerImageConversionGroup'=null,unresolved=null,ignore=true), 2=ValueEntry('<ignore>Groupe de conversion pour les banniďż˝re SSC'=null,unresolved=null,ignore=true), 3=ValueEntry('widescreen,mobile,tablet,desktop'=null,unresolved=true,reason:cannot resolve value 'widescreen,mobile,t
+
+ablet,desktop' for attribute 'supportedFormats',ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.612 | INFO  [ImpExWorker<10/16>] [ImpExWorker] Returning worker impex worker 10/16 [cj:00000029] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.612 | WARN  [impex result worker [cj:00000029]] (ssc) [ImpExImportReader] line 16 at main script: dumped unresolved line ValueLine[,line 16 at main script,ConversionGroup,HeaderDescriptor[line 15 at main script, insert_update, ConversionGroup, {}, [code, name, supported
+
+Formats] ],{1=ValueEntry('<ignore>SSCConversionGroup'=null,unresolved=null,ignore=true), 2=ValueEntry('<ignore>Groupe de conversion pour SSC'=null,unresolved=null,ignore=true), 3=ValueEntry('1200Wx1200H,515Wx515H,365Wx246H,300Wx300H,160Wx160H,96Wx96H,65Wx65H,30Wx30H'=null,unresolved=true,reason:cannot resolve value '12
+
+00Wx1200H,515Wx515H,365Wx246H,300Wx300H,160Wx160H,96Wx96H,65Wx65H,30Wx30H' for attribute 'supportedFormats',ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | INFO  [impex result worker [cj:00000029]] [ImpExWorker] Returning worker impex result worker [cj:00000029] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | INFO  [hybrisHTTP18] (ssc) (00000029) [Importer] Finished 2 pass in 0d 00h:00m:00s:130ms - processed: 13, dumped: 13 (last pass: 13)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | ERROR [hybrisHTTP18] (ssc) (00000029) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 13 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | INFO  [impex reader worker [cj:00000029]] [ImpExWorker] Returning worker impex reader worker [cj:00000029] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=00000029 for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:57:10.613 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/ssccore/import/common/themes.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.152 | INFO  [hybrisHTTP18] (ssc) [Initialization] Creating essential data for amdscore ...
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.152 | INFO  [hybrisHTTP18] (ssc) [ImpExSystemSetup] importing resource : /impex/essentialdataJobs.impex
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.465 | WARN  [impex result worker [cj:00000036-ImpEx-Import]] (ssc) [ImpExImportReader] line 5 at main script: dumped unresolved line ValueLine[unresolvable:cannot create due to unresolved mandatory/initial columns| column 2: could not resolve item for AMDS-UPSellImportJ
+
+ob,line 5 at main script,null,HeaderDescriptor[line 2 at main script, insert_update, CronJob, {}, [code, job, singleExecutable, sessionLanguage] ],{1=ValueEntry('AMDS-UPSellImportCronJob'=AMDS-UPSellImportCronJob,unresolved=false,ignore=false), 2=ValueEntry('AMDS-UPSellImportJob'=null,unresolved=true,reason:could not r
+
+esolve item for AMDS-UPSellImportJob,ignore=false), 3=ValueEntry('false'=false,unresolved=false,ignore=false), 4=ValueEntry('fr'=8796093186080->fr,unresolved=false,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.465 | WARN  [impex result worker [cj:00000036-ImpEx-Import]] (ssc) [ImpExImportReader] line 4 at main script: dumped unresolved line ValueLine[unresolvable:cannot create due to unresolved mandatory/initial columns| column 2: could not resolve item for AMDS-MediaImportJo
+
+b,line 4 at main script,null,HeaderDescriptor[line 2 at main script, insert_update, CronJob, {}, [code, job, singleExecutable, sessionLanguage] ],{1=ValueEntry('AMDS-MediaImportCronJob'=AMDS-MediaImportCronJob,unresolved=false,ignore=false), 2=ValueEntry('AMDS-MediaImportJob'=null,unresolved=true,reason:could not resol
+
+ve item for AMDS-MediaImportJob,ignore=false), 3=ValueEntry('false'=false,unresolved=false,ignore=false), 4=ValueEntry('fr'=8796093186080->fr,unresolved=false,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.465 | INFO  [impex result worker [cj:00000036-ImpEx-Import]] [ImpExWorker] Returning worker impex result worker [cj:00000036-ImpEx-Import] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.466 | INFO  [hybrisHTTP18] (ssc) (00000036-ImpEx-Import) [Importer] Finished 2 pass in 0d 00h:00m:00s:007ms - processed: 3, dumped: 3 (last pass: 3)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.466 | INFO  [impex reader worker [cj:00000036-ImpEx-Import]] [ImpExWorker] Returning worker impex reader worker [cj:00000036-ImpEx-Import] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.466 | WARN  [hybrisHTTP18] (ssc) (00000036-ImpEx-Import) [Importer] Import aborted after 0d 00h:00m:00s:181ms
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.466 | ERROR [hybrisHTTP18] (ssc) (00000036-ImpEx-Import) [ImpExImportJob] Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 3 lines!
+
+INFO   | jvm 1	| main	| 2019/03/14 16:58:49.466 | ERROR [hybrisHTTP18] (ssc) [ImpExManager] Import has caused an error, see logs of cronjob with code=00000036-ImpEx-Import for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.494 | INFO  [impex result worker [cj:0000004X]] [ImpExWorker] Returning worker impex result worker [cj:0000004X] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.494 | INFO  [hybrisHTTP18] (ssc) (0000004X) [Importer] Finished 3 pass in 0d 00h:00m:00s:003ms - processed: 1, dumped: 1 (last pass: 1)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.494 | ERROR [hybrisHTTP18] (ssc) (0000004X) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 3). Finally could not import 1 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.494 | INFO  [impex reader worker [cj:0000004X]] [ImpExWorker] Returning worker impex reader worker [cj:0000004X] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.494 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000004X for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:28.495 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/coredata/contentCatalogs/sscContentCatalog/email-content.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:35.574 | ERROR [hybrisHTTP18] (ssc) (00000057) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 1 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:35.574 | INFO  [impex reader worker [cj:00000057]] [ImpExWorker] Returning worker impex reader worker [cj:00000057] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:35.575 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=00000057 for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:35.575 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/coredata/stores/ssc/solr_en.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:35.676 | INFO  [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/coredata/stores/ssc/solr_fr.impex]...
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.651 | ERROR [impex reader worker [cj:0000005H]] (ssc) [ImpExWorker] unexpected error reading : reached EOF and got odd number of '"'! File is corrupt. Error starts in line: ";INH;";0.025;Pouce (inch);Inch" and occurs somewhere in the following lines.
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.651 | de.hybris.platform.impex.jalo.ImpExException: reached EOF and got odd number of '"'! File is corrupt. Error starts in line: ";INH;";0.025;Pouce (inch);Inch" and occurs somewhere in the following lines.
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.ImpExReader.tryToReadNextLineForImporting(ImpExReader.java:2060) ~[impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.ImpExReader.readLine(ImpExReader.java:1906) ~[impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.imp.ImpExImportReader.readLine(ImpExImportReader.java:500) ~[impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.imp.MultiThreadedImpExImportReader.readLineFromWorker(MultiThreadedImpExImportReader.java:363) ~[impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.imp.ImpExReaderWorker.perform(ImpExReaderWorker.java:41) [impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.impex.jalo.imp.ImpExWorker.run(ImpExWorker.java:89) [impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.util.threadpool.PoolableThread.internalRun(PoolableThread.java:208) [coreserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 |     	at de.hybris.platform.core.threadregistry.RegistrableThread.run(RegistrableThread.java:135) [coreserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.652 | Caused by: java.lang.IllegalStateException: reached EOF and got odd number of '"'! File is corrupt. Error starts in line: ";INH;";0.025;Pouce (inch);Inch" and occurs somewhere in the following lines.
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.653 |     	at de.hybris.platform.util.CSVReader.readNextLine(CSVReader.java:374) ~[coreserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.653 |     	at de.hybris.platform.impex.jalo.ImpExReader.tryToReadNextLineForImporting(ImpExReader.java:2056) ~[impexserver.jar:?]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:40.653 |     	... 7 more
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.582 | WARN  [impex result worker [cj:0000005K]] (ssc) [ImpExImportReader] line 5 at main script: dumped unresolved line ValueLine[unresolvable:no existing item found for update,line 5 at main script,null,HeaderDescriptor[line 2 at main script, update, Category, {}, [cod
+
+e, catalogversion, name] ],{1=ValueEntry('Noire_Tole'=Noire_Tole,unresolved=false,ignore=false), 2=ValueEntry(''=sscProductCatalog/Staged(8796125856345),unresolved=false,ignore=false), 3=ValueEntry('Noire'=null,unresolved=null,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.582 | WARN  [impex result worker [cj:0000005K]] (ssc) [ImpExImportReader] line 4 at main script: dumped unresolved line ValueLine[unresolvable:no existing item found for update,line 4 at main script,null,HeaderDescriptor[line 2 at main script, update, Category, {}, [cod
+
+e, catalogversion, name] ],{1=ValueEntry('Decapee_Tole'=Decapee_Tole,unresolved=false,ignore=false), 2=ValueEntry(''=sscProductCatalog/Staged(8796125856345),unresolved=false,ignore=false), 3=ValueEntry('DĂ©capĂ©e'=null,unresolved=null,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.582 | WARN  [impex result worker [cj:0000005K]] (ssc) [ImpExImportReader] line 3 at main script: dumped unresolved line ValueLine[unresolvable:no existing item found for update,line 3 at main script,null,HeaderDescriptor[line 2 at main script, update, Category, {}, [cod
+
+e, catalogversion, name] ],{1=ValueEntry('Larmee_Tole'=Larmee_Tole,unresolved=false,ignore=false), 2=ValueEntry(''=sscProductCatalog/Staged(8796125856345),unresolved=false,ignore=false), 3=ValueEntry('LarmĂ©e'=null,unresolved=null,ignore=false)}]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.583 | INFO  [impex result worker [cj:0000005K]] [ImpExWorker] Returning worker impex result worker [cj:0000005K] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.583 | INFO  [hybrisHTTP18] (ssc) (0000005K) [Importer] Finished 2 pass in 0d 00h:00m:00s:004ms - processed: 3, dumped: 3 (last pass: 3)
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.583 | ERROR [hybrisHTTP18] (ssc) (0000005K) [CronJobErrorHandler] de.hybris.platform.impex.jalo.ImpExException: Can not resolve any more lines ... Aborting further passes (at pass 2). Finally could not import 3 lines![HY-123]
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.583 | INFO  [impex reader worker [cj:0000005K]] [ImpExWorker] Returning worker impex reader worker [cj:0000005K] to the pool
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.684 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=0000005K for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:41.684 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/categories_fr.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:50.177 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/categories-classifications.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:51.550 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/suppliers-media.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:55.143 | ERROR [hybrisHTTP18] (ssc) [DefaultImportService] Import has caused an error, see logs of cronjob with code=00000062 for further details
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:55.143 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/multi-d/dimension-products.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:56.345 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/multi-d/dimension-products-media.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:57.276 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/multi-d/dimension-products-stock-levels.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 16:59:57.917 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/productCatalogs/sscProductCatalog/multi-d/dimension-products-pos-stocklevels.impex]... FAILED
+
+INFO   | jvm 1	| main	| 2019/03/14 17:00:04.860 | ERROR [hybrisHTTP18] (ssc) [DefaultSetupImpexService] Importing [/sscinitialdata/import/sampledata/contentCatalogs/sscContentCatalog/cms-responsive-content.impex]... FAILED
+
 INFO  [ImpExWorker<9/16>] [ImpExWorker] Returning worker impex worker 9/16 [cj:0000006K] to the pool
 
 INFO  [ImpExWorker<2/16>] [ImpExWorker] Returning worker impex worker 2/16 [cj:0000006K] to the pool
