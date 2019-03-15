@@ -910,7 +910,11 @@ java.io.IOException: Unable to delete file: D:\PROJ\MITTAL\ws_esteel\hybris\data
 
     20. AMDF Storefront:
 
+--
+
 ![image alt text]({{ site.url }}/public/zhVisFitu2T7aod2alknCw_img_0.png)
+
+--
 
 ERROR [hybrisHTTP26] [SolrSearchRequestResponsePopulator] Exception while executing SOLR search
 
