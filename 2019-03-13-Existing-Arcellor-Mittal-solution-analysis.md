@@ -1252,5 +1252,888 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No b
 
     	at de.hybris.platform.solrfacetsearch.search.impl.DefaultFacetSearchStrategy.search(DefaultFacetSearchStrategy.java:155) ~[solrfacetsearchserver.jar:?]
 
-  
+  Analizai itemów:
+
+1. Amdscore-items.xml
+
+<table>
+  <tr>
+    <td>Itemtype</td>
+    <td>parent</td>
+    <td>attributes</td>
+    <td>deployment</td>
+    <td>idx</td>
+    <td>notes</td>
+  </tr>
+  <tr>
+    <td>Product</td>
+    <td>n/a</td>
+    <td>amdsDimension:localized:Media
+amdsDetailedDescription
+amdsTechnicalInfo
+amdsOurAdvices
+amdsStockLevelThreshold
+inPromotion
+amdsTitle</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSPriceCoefficient
+</td>
+    <td>GenericItem</td>
+    <td>amdsClientType:AMDSClientType
+amdsPriceCoefficient</td>
+    <td>AMDSPriceCoefficients
+10400</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSPointRelais</td>
+    <td>GenericItem</td>
+    <td>pointRelaisAddress:Address</td>
+    <td>AMDSPointsRelais
+10460</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSWeightInterval</td>
+    <td>GenericItem</td>
+    <td>idInterval
+lowerBound
+upperBound
+intervalPrice</td>
+    <td>AMDSWeightIntervals
+10470</td>
+    <td>y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>MediaContainer</td>
+    <td>n/a</td>
+    <td>amdsOrder (is type of int not Integer)
+amdsPointOfService:PointOfService</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSStockNotification</td>
+    <td>n/a</td>
+    <td>productCode
+email
+pointOfServiceName (shouldn't be POS ref instead)?
+baseSite:BaseSite</td>
+    <td>AMDSStockNotification
+10471</td>
+    <td>y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AbstractOrder</td>
+    <td>n/a</td>
+    <td>amdsOrderWeight
+amdsPointRelais:PointOfService
+amdsPointOfService:PointOfService
+transferTime</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CMSNavigationNode</td>
+    <td>n/a</td>
+    <td>picture:localized:Media</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSDeliv
+eryBlackItem</td>
+    <td>GenericItem (indirectly)</td>
+    <td>zipCode
+Country
+deliveryMode:ZoneDeliveryMode</td>
+    <td>AMDSDeliveryBlackItem
+1520 ← low typecode</td>
+    <td>y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>OpeningDay</td>
+    <td>n/a</td>
+    <td>openingTimePM:Date
+closingTimePM:Date</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ApparelProduct
+ApparelStyleVariantProduct
+ApparelSizeVariantProduct
+ElectronicsColorVariantProduct</td>
+    <td>n/a</td>
+    <td>What for??</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>What for??</td>
+  </tr>
+  <tr>
+    <td>AMDSProductAddToCartComponent</td>
+    <td>SimpleCMSComponent</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSArcelorMittalEtVousComponent</td>
+    <td>RotatingImagesComponent</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSResponsiveCategoryImageBannerComponent</td>
+    <td>BannerComponent</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSMyCompanyBannerPrimaryComponent</td>
+    <td>BannerComponent</td>
+    <td>banners:CompanyBannerSecondaryComponentList</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSMyCompanyBannerSecondaryComponent</td>
+    <td>BannerComponent</td>
+    <td>icon:Media
+backgroundColor (colo defined as HYBRIS.LONG_STRING why?)</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSMyAccountBannerComponent</td>
+    <td>BannerComponent</td>
+    <td>icon:Media
+bckgrounMobileImage:Media
+backgroundColor (colo defined as HYBRIS.LONG_STRING why?)
+</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td>DRY violation</td>
+  </tr>
+  <tr>
+    <td>AMDSMyAccountBlockComponent</td>
+    <td>BannerComponent</td>
+    <td>component1:AMDSMyAccountBannerComponent
+component2:AMDSMyAccountBannerComponent
+component3:AMDSMyAccountBannerComponent
+component4:AMDSMyAccountBannerComponent
+component5:AMDSMyAccountBannerComponent</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td>Strange composition</td>
+  </tr>
+  <tr>
+    <td>AMDSArcelorMittalEtVousBannerComponent</td>
+    <td>BannerComponent</td>
+    <td>icon:Media
+backgroundColor (colo defined as HYBRIS.LONG_STRING why?)</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td>DRY violation</td>
+  </tr>
+  <tr>
+    <td>AMDSArcelorMittalEtVousBlockComponent</td>
+    <td>BannerComponent</td>
+    <td>component1:AMDSArcelorMittalEtVousBannerComponent
+component2:AMDSArcelorMittalEtVousBannerComponent
+component3:AMDSArcelorMittalEtVousBannerComponent</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td>Strange composition</td>
+  </tr>
+  <tr>
+    <td>AMDSHomePageBannerSearchBoxComponent</td>
+    <td>SimpleResponsiveBannerComponent</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Category</td>
+    <td>n/a</td>
+    <td>amdsOurAdvices
+amdsDetailedDescription</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AmdsRegisterQuestion</td>
+    <td>GenericItem</td>
+    <td>amdsCode
+amdsRegisterQuestionText</td>
+    <td>AmdsRegisterQuestion
+10500</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BUnit</td>
+    <td>n/a</td>
+    <td>amdsCompanyName
+amdsAdministrationName
+amdsClientType:AMDSClientType
+amdsNonClientType:AMDSNonClientType
+sapDeliveryBlocked
+attachmentAgency:PointOfService</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BCustomer</td>
+    <td>n/a</td>
+    <td>amdsFirstName
+amdsLastName
+amdsMobilePhone
+amdsFixedPhone
+amdsFunction
+registredInTheWebShop
+amdsFirstSecurityQuestion
+amdsFirstSecurityResponse
+amdsSecondSecurityQuestion
+amdsSecondSecurityResponse
+amdsThirdSecurityQuestion
+amdsThirdSecurityResponse
+amdsCGVenteValidationTime
+amdsCGUtilisationValidationTime
+amdsPolitiqueDPValidationTime
+isCreatedFromHybris
+promoSubChecked
+newsLetterSubChecked
+amdsAccountActivationTime</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>Quite many attributes - maybe should be refactored to other entities?</td>
+  </tr>
+  <tr>
+    <td>AMDSZipCode</td>
+    <td>GenericItem (indirectly)</td>
+    <td>postalCode
+country:Country
+Does postalCode have to be HYBRIS.LONG_STRING?
+</td>
+    <td>AmdsZipCode
+10206</td>
+    <td>Y</td>
+    <td>Is such model not present OOTB?</td>
+  </tr>
+  <tr>
+    <td>DeliveryModeSupportedPostalCodes</td>
+    <td>GenericItem (indirectly)</td>
+    <td>supportedPostalCode</td>
+    <td>DelivModSuppPostCode
+10216</td>
+    <td>n/a</td>
+    <td>Look like created just for m2n relation TB checked</td>
+  </tr>
+  <tr>
+    <td>UpdatedPasswordProcess</td>
+    <td>StoreFrontCustomerProcess</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSStoreFrontCustomerProcess</td>
+    <td>StoreFrontCustomerProcess</td>
+    <td>token</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td>n/a</td>
+    <td>Heading 
+requiresPostalCodeValidation
+
+Does heading have to be HYBRIS.LONG_STRING?</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cart</td>
+    <td>n/a</td>
+    <td>deliveryComment
+taxRate
+
+Why not to use OOTB taxes?</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>In comment the intention is to extend AbstractOrder but Cart is extended instead.</td>
+  </tr>
+  <tr>
+    <td>Order</td>
+    <td>n/a</td>
+    <td>deliveryComment
+sapOrderCode
+sapPlacedOrderError</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>n comment the intention is to extend AbstractOrder but Cart is extended instead.</td>
+  </tr>
+  <tr>
+    <td>AbstractOrderEntry</td>
+    <td>n/a</td>
+    <td>amdsDynamicSourcingEntries:AMDSDynamicSourcingEntryList
+transferTime (integer for time?)</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>Put deliveryComment here?</td>
+  </tr>
+  <tr>
+    <td>CMSAgencyRestriction</td>
+    <td>AbstractRestriction</td>
+    <td>agency:PointOfService</td>
+    <td>As parent</td>
+    <td>N</td>
+    <td>naming Agency vs PointOfService</td>
+  </tr>
+  <tr>
+    <td>FooterNavigationComponent</td>
+    <td>n/a</td>
+    <td>amdsContactArea:CMSParagraphComponent
+banners:BannerComponentList</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ClassificationAttribute</td>
+    <td>n/a</td>
+    <td>Visible
+hmcIndexField - no hmc used</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSStockNotificationProcess</td>
+    <td>StoreFrontProcess</td>
+    <td>customer:B2BCustomer
+Email
+productID
+productName
+language:Language
+pointOfServiceName - why not to use ref</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSMailingAbandonedCartsProcess</td>
+    <td>StoreFrontProcess</td>
+    <td>cart:Cart</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSChangingDeliveryAddressProcess</td>
+    <td>StoreFrontProcess</td>
+    <td>customer:B2BCustomer
+deliveryAddress:Address
+language:Language
+pointOfServiceName - why not to use ref</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PointOfService</td>
+    <td>n/a</td>
+    <td>Activated
+idClientVdc
+deliveryPartnerType:PointOfServiceTypeEnum</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Warehouse</td>
+    <td>n/a</td>
+    <td>onlineProductCatalogVersion:CatalogVersion</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td>Need to see what for</td>
+  </tr>
+  <tr>
+    <td>AMDSAdminRegionalGroup</td>
+    <td>UserGroup</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSSupportAgencyGroup</td>
+    <td>CsAgentGroup</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSDynamicSourcingEntry</td>
+    <td>GenericItem (indirectly)</td>
+    <td>warehouse:Warehouse</td>
+    <td>amdsDynamicSourcingEntry
+10221</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSDynamicSourcing</td>
+    <td>n/a</td>
+    <td>Source:Warehouse
+Target:Warehouse
+priority
+transferTime - why integer for time?
+threshold</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Zone</td>
+    <td>n/a</td>
+    <td>zoneName</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSZoneDeliveryModeValue</td>
+    <td>GenericItem</td>
+    <td>Currency:currency
+Minimum
+Value
+zone</td>
+    <td>amdsZoneDeliModeValues
+10219</td>
+    <td>Y</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ZoneDeliveryMode</td>
+    <td>n/a</td>
+    <td>supportedMaximumLength
+supportedMaximumWeight</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>OrderProcess</td>
+    <td>n/a</td>
+    <td>notSupportedDeliveryMode
+notSupportedDeliveryModeMessages:NotSupportedDeliveryModeMessages</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSB2BApprovalProcess</td>
+    <td>B2BApprovalProcess</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSFavoriteList</td>
+    <td>GenericItem</td>
+    <td>Name
+Description
+default</td>
+    <td>AMDSFavoriteList
+10510</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>AMDSFavoriteListEntry</td>
+    <td>GenericItem</td>
+    <td>Product:product
+addedDate</td>
+    <td>AMDSFavoriteListEntry
+10520</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
+
+2. Amdsaccountsummariesaddon - no items
+
+3. Amdsbackoffice - no items
+
+4. Amdscheckoutaddon - no items
+
+5. Amdscockpits - no items
+
+6. Amdscommerceorgaddon - no items
+
+7. Amdscommercewebservices
+
+<table>
+  <tr>
+    <td>ProductExpressUpdateCleanerCronJob</td>
+    <td>CronJob</td>
+    <td>queueTimeLimit</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>OldCartRemovalCronJob</td>
+    <td>CronJob</td>
+    <td>sites:BaseSiteCollection
+cartRemovalAge
+anonymousCartRemovalAge
+</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
+
+8. Amdscustomerticketingaddon - no items
+
+9. Amdsfacades - no items
+
+10. amdsfulfilmentprocess
+
+<table>
+  <tr>
+    <td>ConsignmentProcess</td>
+    <td>n/a</td>
+    <td>Done
+waitingForConsignment
+warehouseConsignmentState:warehouseConsignmentState</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
+
+11. Amdsinitialdata - no items
+
+12. Amdsstorefront - no items
+
+13. Amdstest - no items
+
+14. Amdswsclient - no items
+
+15. Mercanetcore - no items
+
+16. Updatedata 
+
+<table>
+  <tr>
+    <td>FileEntry</td>
+    <td>GenericItem (indirectly)</td>
+    <td>file:Media
+Status:StatusFileEnum
+errorMessage
+</td>
+    <td>FileEntry
+31992</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>UpdateReleaseExecution</td>
+    <td>n/a</td>
+    <td>Release
+revisionNumber
+executionDate
+executionUser:User</td>
+    <td>UpdateReleaseExecution
+31993</td>
+    <td>N</td>
+    <td></td>
+  </tr>
+</table>
+
+
+17. ssccore
+
+<table>
+  <tr>
+    <td>SSCProduct</td>
+    <td>Product</td>
+    <td>sscAMDSProductId</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Order</td>
+    <td>n/a</td>
+    <td>sscGPAOOrderCode
+sscPlacedOrderErrorCode
+sscPlacedOrderErrorMessages</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Address</td>
+    <td>n/a</td>
+    <td>sscIsValidGPAO
+sscIsVisible
+sscCode</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Country</td>
+    <td>n/a</td>
+    <td>sscWeightMin
+sscWeightMax</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BUnit</td>
+    <td>n/a</td>
+    <td>sscIsExternal
+sscIsBlocked</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PriceRow</td>
+    <td>n/a</td>
+    <td>manufacturingUnit:Warehouse</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Warehouse</td>
+    <td>n/a</td>
+    <td>sapCode</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>StockLevel</td>
+    <td>n/a</td>
+    <td>sscSalesUnit</td>
+    <td>n/a</td>
+    <td></td>
+    <td></td>
+  </tr>
+</table>
+
+
+18. Sscb2baddon - not a good place for defining items
+
+<table>
+  <tr>
+    <td>SSCReorderAction</td>
+    <td>SimpleCMSAction</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SSCApproveOrderAction</td>
+    <td>SimpleCMSAction</td>
+    <td>No attributes, not abstract, no jalo additional impl in class </td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
+
+19. Ssccockpits - no items
+
+20. sscearlyloginadon
+
+<table>
+  <tr>
+    <td>CMSSecurePortalRestriction</td>
+    <td>AbstractRestriction</td>
+    <td>Description - dynamic->cmsSecurePortalRestrictionDynamicDescription</td>
+    <td>As parent</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CMSSite</td>
+    <td>n/a</td>
+    <td>requiresAuthentication
+enableRegistration</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BRegistration</td>
+    <td>n/a</td>
+    <td>cmsSite:CMSSite
+language:Language
+currencyCurrency
+baseStore:BaseStore
+title:Title
+Name
+Email
+Position
+Telephone
+telephoneExtension
+companyName
+companyAddressStreet
+companyAddressStreetLine2
+companyAddressCity
+companyAddressPostalCode
+companyAddressRegion:Region
+companyAddressCountry:Country
+Message
+rejectReason
+defaultB2BUnit:B2BUnit
+
+Looks like to many attributes which maybe have a suitable entity OOTB</td>
+    <td>B2bregistration
+10040</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BRegistrationProcess</td>
+    <td>StoreFrontCustomerProcess</td>
+    <td>registration:B2BRegistration</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BRegistrationApprovedProcess</td>
+    <td>B2BRegistrationProcess</td>
+    <td>passwordResetToken</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>B2BRegistrationRejectedProcess</td>
+    <td>B2BRegistrationProcess</td>
+    <td>rejectReason this attribute seems to duplicate the indirect attribute of B2Bregistration which is an attribute of parent process</td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
+
+21. Sscfacades - no items
+
+22. Sscfulfilmentprocess - no items
+
+23. Sscinitialdata - no items
+
+24. Sscstorefront - no items
+
+25. ssc test - no items
+
+26. Sscwsdata - no items
+
+<table>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>n/a</td>
+    <td></td>
+    <td>n/a</td>
+    <td>n/a</td>
+    <td></td>
+  </tr>
+</table>
+
 
